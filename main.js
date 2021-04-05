@@ -23,6 +23,7 @@ async function getQuotes() {
 
         const response = await fetch(apiUrl);
         apiQuotes = await response.json();
+        newQuote();
 
     } catch (error) {
 
@@ -31,4 +32,4 @@ async function getQuotes() {
     }
 }
 
-// getQuotes();
+getQuotes();
